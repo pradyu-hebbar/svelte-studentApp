@@ -35,8 +35,8 @@
 </script>
 
 <div>
-  <input type="text" on:input={filterStudents} />
-
+  <input type="text" on:input={filterStudents} placeholder="Search for A Student" />
+<i class="fas fa-search"></i>
 	{#if filteredStudents.length === 0}
 		 {#each students as student}
     <Student {student} />
